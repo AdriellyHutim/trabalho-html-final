@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(241, 149, 195); /* Rosa claro */
+      }
+      
+      tbody tr:nth-child(odd) {
+        background-color: rgb(250, 97, 199);
+      }
+      tbody tr:nth-child(even) {
+        background-color: rgb(245, 161, 210);
+      }
+
+      form {
+        border: 2px solid gray;
+        padding: 10px;
+        margin: 50px;
+        background-color: rgb(240, 9, 171);
+      }
+    </style>
+    <script>
+      function ocultarFormulario() {}
+
+      function exibirFormulario() {}
+    </script>
+  </head>
+  <body>
+    <h1>Lista de Cachorros e Donos</h1>
+    <button onclick="ocultarFormulario()">Adicionar um cachorro </button>
+    <br />
+    <form id="formulario">
+      <label>Cachorro</label>
+      <input name="cachorro" type="text" />
+      <br />
+
+      <label>Dono</label>
+      <input name="dono" type="text" />
+      <br />
+
+      <label>Telefone</label>
+      <input name="tefefone" type="tel" />
+      <br />
+
+      <label>Email</label>
+      <input name="email" type="email" />
+      <br />
+
+      <label>Imagem</label>
+      <input name="imagem" type="text" />
+      <br />
+      <button>Adicionar</button>
+    </form>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Imagem</td>
+          <td>Cachorro</td>
+          <td>Dono</td>
+          <td>Telefone</td>
+          <td>Email</td>
+          <td>Ações</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="https://placedog.net/150/150?random=1" />
+          </td>
+          <td>Nina</td>
+          <td>Adrielly</td>  
+          <td>62 998465859</td>
+          <td>adrielly@gmail.com</td>
+          <td>
+            <button>editar</button>
+            <button>excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://placedog.net/150/150?random=2" />
+          </td>
+          <td>Bolinha</td>
+          <td>Lara</td>  
+          <td>62 998465745</td>
+          <td>lara@gmail.com</td>
+          <td>
+            <button>editar</button>
+            <button>excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://placedog.net/150/150?random=3" />
+          </td>
+          <td>Belinha</td>
+          <td>Yone</td>  
+          <td>62 998465859</td>
+          <td>yone@gmail.com</td>
+          <td>
+            <button>editar</button>
+            <button>excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://placedog.net/150/150?random=4" />
+          </td>
+          <td>Moly</td>
+          <td>Enzo</td>  
+          <td>62 998465859</td>
+          <td>enzo@gmail.com</td>
+          <td>
+            <button>editar</button>
+            <button>excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://placedog.net/150/150?random=5" />
+          </td>
+          <td>Godofredo</td>
+          <td>Kenia</td>
+          <td>29777883644</td>
+          <td>Kenia@gmail.com</td>
+          <td>
+            <button>editar</button>
+            <button>excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
